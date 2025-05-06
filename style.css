@@ -1,11 +1,18 @@
+/* Import de tipografia */
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Variables */
 
 :root {
   --bgColor: #fdf9f3;
   --textColor: #3e2c1c;
+  --btnPrimary: #6b8e77;
   --font-Title: "Playfair Display", serif;
   --font-Paragraph: "Open Sans", sans-serif;
 }
+
+/* Generales  */
 
 * {
   padding: 0;
@@ -26,6 +33,19 @@ body {
   background-color: var(--bgColor);
 }
 
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 1440px;
+  padding: 20px 24px;
+}
+/* NavBar  */
+
 .navbar {
   width: 100%;
   display: flex;
@@ -34,7 +54,7 @@ body {
 }
 
 .navbar_container {
-  max-width: 1840px;
+  max-width: 1440px;
   padding: 20px 24px;
   width: 100%;
   display: flex;
@@ -43,7 +63,7 @@ body {
 }
 
 .navbar_icon {
-  width: 180px;
+  width: 84px;
 }
 
 .nav_container_links {
@@ -72,4 +92,57 @@ body {
   .navbar_icon {
     width: 180px;
   }
+}
+
+/* Seccion Principal */
+
+.hero-section {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero_section_header {
+  position: relative;
+  width: 1040px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero_section_header_title {
+  font-size: 48px;
+  max-width: 100%;
+  width: 24ch;
+  font-family: var(--font-Title);
+  color: var(--textColor);
+}
+
+.hero_section_header_pg {
+  margin-top: 16px;
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 100%;
+  width: 80ch;
+}
+
+.hero_section_header_btn {
+  display: inline-block;
+  width: max-content;
+  margin-top: 26px;
+  color: var(--bgColor);
+  background: var(--btnPrimary);
+  padding: 6.5px 28px;
+  font-weight: 600;
+}
+
+.hero_section_footer_svg {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  z-index: -10;
 }
