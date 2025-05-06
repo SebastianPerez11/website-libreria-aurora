@@ -34,8 +34,8 @@ body {
 }
 
 .navbar_container {
-  max-width: 1440px;
-  padding: 14px 24px;
+  max-width: 1840px;
+  padding: 20px 24px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar_icon {
-  width: 220px;
+  width: 180px;
 }
 
 .nav_container_links {
@@ -52,13 +52,13 @@ body {
 }
 
 .nav_container_links_link {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 .nav_container_links_link-active {
   font-size: 18px;
   font-weight: 600;
-  border-bottom: 3px solid var(--textColor);
+  border-bottom: 2.5px solid var(--textColor);
 }
 
 @media (width <= 768px) {
