@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --bgColor: #fdf9f3;
+  --textColor: #3e2c1c;
+  --font-Title: "Playfair Display", serif;
+  --font-Paragraph: "Open Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Paragraph);
+  & a {
+    text-decoration: none;
+    color: var(--textColor);
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+body {
+  background-color: var(--bgColor);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_container {
+  max-width: 1440px;
+  padding: 14px 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_icon {
+  width: 220px;
+}
+
+.nav_container_links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav_container_links_link {
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav_container_links_link-active {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 3px solid var(--textColor);
+}
+
+@media (width <= 768px) {
+  .nav_container_links {
+    display: none;
+  }
+  .navbar_container {
+    justify-content: center;
+  }
+
+  .navbar_icon {
+    width: 180px;
+  }
+}
