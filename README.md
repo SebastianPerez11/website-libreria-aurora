@@ -2,7 +2,7 @@
 
 ### Librería Aurora es un proyecto ficticio de tienda online especializada en libros, pensada para ofrecer una experiencia de compra cálida, editorial y cuidadosamente curada. Inspirada en el amor por la lectura.
 
-![Frame 4](https://github.com/user-attachments/assets/bd8997fd-f466-478a-91fd-ef985e63b243)
+![Group 8](https://github.com/user-attachments/assets/cec55152-9a30-442e-ba83-4fd1a25a309a)
 
 ### Descripción general
 
