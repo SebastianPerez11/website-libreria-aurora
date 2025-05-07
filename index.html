@@ -7,7 +7,7 @@
     <title>Librería Aurora - Tu espacio para descubrir, sentir y leer</title>
   </head>
   <body>
-    <header class="navbar">
+    <header id="inicio" class="navbar">
       <nav class="navbar_container">
         <picture>
           <img src="./assets/svg/logoAurora.svg" class="navbar_icon" alt="" />
@@ -98,57 +98,73 @@
 
       <section class="section">
         <header>
-          <h1 class="section-title">Libros más populares:</h1>
+          <h1 class="section_title">Libros más populares:</h1>
         </header>
 
-        <footer>
-          <div>
+        <footer class="books_section_footer">
+          <div class="books_section_footer_card">
             <img
+              class="books_section_footer_img"
               src="./assets/img/LaSombraDelVientoBook.webp"
               alt="Imagen de un Libro"
             />
-            <h2>“La sombra del viento”</h2>
-            <p>Carlos Ruiz Zafón</p>
+            <h2 class="books_section_footer_title">“La sombra del viento”</h2>
+            <p class="books_section_footer_subtitle">Carlos Ruiz Zafón</p>
           </div>
-          <div>
-            <img src="./assets/img/SapiensBook.webp" alt="Imagen de un Libro" />
-            <h2>"Sapiens: De animales a dioses"</h2>
-            <p>Yuval Noah Harari</p>
-          </div>
-          <div>
+          <div class="books_section_footer_card">
             <img
+              class="books_section_footer_img"
+              src="./assets/img/SapiensBook.webp"
+              alt="Imagen de un Libro"
+            />
+            <h2 class="books_section_footer_title">
+              "Sapiens: De animales a dioses"
+            </h2>
+            <p class="books_section_footer_subtitle">Yuval Noah Harari</p>
+          </div>
+          <div class="books_section_footer_card">
+            <img
+              class="books_section_footer_img"
               src="./assets/img/ElPrincipitoBook.webp"
               alt="Imagen de un Libro"
             />
-            <h2>“El principito”</h2>
-            <p>Antoine de Saint-Exupéry</p>
+            <h2 class="books_section_footer_title">“El principito”</h2>
+            <p class="books_section_footer_subtitle">
+              Antoine de Saint-Exupéry
+            </p>
           </div>
 
-          <div>
-            <img src="./assets/img/NarniaBook.webp" alt="Imagen de un Libro" />
-            <h2>“Las crónicas de Narnia”</h2>
-            <p>Clive Staples Lewis</p>
-          </div>
-
-          <div>
+          <div class="books_section_footer_card">
             <img
+              class="books_section_footer_img"
+              src="./assets/img/NarniaBook.webp"
+              alt="Imagen de un Libro"
+            />
+            <h2 class="books_section_footer_title">“Las crónicas de Narnia”</h2>
+            <p class="books_section_footer_subtitle">Clive Staples Lewis</p>
+          </div>
+
+          <div class="books_section_footer_card">
+            <img
+              class="books_section_footer_img"
               src="./assets/img/AlmendraBook.webp"
               alt="Imagen de un Libro"
             />
-            <h2>“Almendra”</h2>
-            <p>Won-Pyung Sohn</p>
+            <h2 class="books_section_footer_title">“Almendra”</h2>
+
+            <p class="books_section_footer_subtitle">Won-Pyung Sohn</p>
           </div>
         </footer>
       </section>
 
       <section class="section">
         <header>
-          <h1 class="section-title">Testimonios:</h1>
+          <h1 class="section_title">Testimonios:</h1>
         </header>
 
-        <footer>
-          <div>
-            <p>
+        <footer class="views_section_footer">
+          <div class="views_section_footer_card --top">
+            <p class="views_section_footer_card_title">
               "Soy fanática de los libros y he probado muchas tiendas online,
               pero Librería Aurora tiene algo especial. La selección es muy
               cuidada, los textos de presentación me hacen sentir que alguien
@@ -156,38 +172,38 @@
               perfectamente empaquetado. Sin duda volveré a comprar. Desde que
               entré me atrapó la estética y los textos.”
             </p>
-            <div>
+            <div class="views_section_footer_card_contain">
               <h2>María L.</h2>
               <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
             </div>
           </div>
 
-          <div>
-            <p>
+          <div class="views_section_footer_card --left">
+            <p class="views_section_footer_card_title">
               "Muy buena selección de literatura contemporánea, sobre todo
               latinoamericana. Me gusta que se nota que detrás hay curaduría y
               no solo ventas.”
             </p>
-            <div>
+            <div class="views_section_footer_card_contain">
               <h2>Esteban C.</h2>
               <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
             </div>
           </div>
 
-          <div>
-            <p>
+          <div class="views_section_footer_card --right">
+            <p class="views_section_footer_card_title">
               "Encontré libros infantiles preciosos, con valores y mensajes
               importantes. Mi hija ya tiene sus favoritos. Agradezco mucho que
               ofrezcan recomendaciones por edad y temática."
             </p>
-            <div>
+            <div class="views_section_footer_card_contain">
               <h2>Ricardo V.</h2>
               <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
             </div>
           </div>
 
-          <div>
-            <p>
+          <div class="views_section_footer_card --bottom">
+            <p class="views_section_footer_card_title">
               "Soy fanática de los libros y he probado muchas tiendas online,
               pero Librería Aurora tiene algo especial. La selección es muy
               cuidada, los textos de presentación me hacen sentir que alguien
@@ -195,7 +211,7 @@
               perfectamente empaquetado. Sin duda volveré a comprar. Desde que
               entré me atrapó la estética y los textos.”
             </p>
-            <div>
+            <div class="views_section_footer_card_contain">
               <h2>Lucía T.</h2>
               <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
             </div>
@@ -205,34 +221,49 @@
 
       <section class="section">
         <header>
-          <h1 class="section-title">Newsletter:</h1>
+          <h1 class="section_title">Newsletter:</h1>
         </header>
 
-        <footer>
-          <h1>¿Amas los libros?</h1>
-          <p>
-            Suscríbete para recibir novedades, reseñas y descuentos exclusivos.
-          </p>
-          <input type="text" />
-          <button>Suscribirse</button>
+        <footer class="newsletter_section_footer">
+          <div class="newsletter_section_footer_contain">
+            <h1 class="newsletter_section_footer_title">¿Amas los libros?</h1>
+            <p class="newsletter_section_footer_subtitle">
+              Suscríbete para recibir novedades, reseñas y descuentos
+              exclusivos.
+            </p>
+            <span class="newsletter_section_footer_contain_input">
+              <input class="newsletter_section_footer_input" type="text" />
+              <button class="newsletter_section_footer_btn">Suscribirse</button>
+            </span>
+          </div>
         </footer>
       </section>
     </main>
-    <footer>
-      <img src="./" alt="" />
+    <footer class="footer">
+      <div class="footer_container">
+        <picture class="footer_container_navbar_icon">
+          <img class="navbar_icon" src="./assets/svg/logoAurora.svg" alt="" />
+        </picture>
 
-      <aside>
-        <div>
-          <a href=""><img src="" alt="" /></a>
-          <a href=""><img src="" alt="" /></a>
-          <a href=""><img src="" alt="" /></a>
-          <div>
-            <span> Volver al inicio</span>
-            <a href="./"></a>
+        <aside class="footer_container_aside">
+          <div class="container_links">
+            <a class="footer_aside_link" href="./"
+              ><img src="./assets/svg/iconFacebook.svg" alt=""
+            /></a>
+            <a class="footer_aside_link" href="./"
+              ><img src="./assets/svg/iconInstagram.svg" alt=""
+            /></a>
+            <a class="footer_aside_link" href="./"
+              ><img src="./assets/svg/iconWhatsapp.svg" alt=""
+            /></a>
+            <a href="#inicio" class="footer_aside_links">
+              <span> Volver al inicio</span>
+              <img class="arrow_icon" src="./assets/svg/IconArrow.svg" alt="" />
+            </a>
           </div>
-        </div>
-        <p></p>
-      </aside>
+          <p class="footer_aside_pg">Desarrollado por Sebastian Perez - 2025</p>
+        </aside>
+      </div>
     </footer>
   </body>
 </html>
