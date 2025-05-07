@@ -20,7 +20,7 @@ Librería Aurora es una tienda online dedicada a los amantes de los libros, desa
 
 ## Vista previa
 
-![image]![c919a577-0861-4555-823c-76661c9adaa6](https://github.com/user-attachments/assets/3d60c407-e60d-4ca5-9312-ce2e47ce20f6)
+[c919a577-0861-4555-823c-76661c9adaa6](https://github.com/user-attachments/assets/3d60c407-e60d-4ca5-9312-ce2e47ce20f6)
 
 ### Deploy
 
