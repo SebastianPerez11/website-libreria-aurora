@@ -356,7 +356,7 @@ button {
   background-image: url("./assets/img/Newsletter.webp");
   background-position: center;
   background-size: cover;
-  height: 280px;
+  height: 300px;
   margin-top: 44px;
 }
 
@@ -467,8 +467,8 @@ button {
   padding: 4px 12px;
   background-color: var(--btnPrimary);
   border-radius: 50%;
-  height: 26px;
-  width: 26px;
+  height: 28px;
+  width: 28px;
 }
 
 .footer_container_aside {
