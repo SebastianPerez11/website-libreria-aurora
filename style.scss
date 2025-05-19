@@ -1,9 +1,35 @@
-@charset "UTF-8";
 /* Import de tipografía */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 /* VARIABLES */
+$bg-color: #fdf9f3;
+$text-color: #3e2c1c;
+$btn-primary: #6b8e77;
+$font-title: "Playfair Display", serif;
+$font-paragraph: "Open Sans", sans-serif;
+
 /* MIXINS */
+@mixin flex-center($direction: row, $gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin section-padding($padding: 20px 24px) {
+  width: 100%;
+  max-width: 1440px;
+  padding: $padding;
+}
+
 /* PLACEHOLDERS */
+%section-title {
+  font-family: $font-title;
+  font-size: 32px;
+  color: $text-color;
+}
+
 /* ANIMACIONES */
 @keyframes fade-in-up {
   from {
@@ -15,6 +41,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes nav-animation {
   from {
     opacity: 0;
@@ -25,23 +52,25 @@
     transform: translateY(0);
   }
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-paragraph;
   scroll-behavior: smooth;
-}
-* a {
-  text-decoration: none;
-  color: #3e2c1c;
-}
-* ul {
-  list-style: none;
+  & a {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  ul {
+    list-style: none;
+  }
 }
 
 body {
-  background-color: #fdf9f3;
+  background-color: $bg-color;
 }
 
 main {
@@ -71,13 +100,14 @@ button {
     padding: 12px 8px;
   }
 }
-.section_title {
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
-  color: #3e2c1c;
-}
 
+.section_title {
+  font-family: $font-title;
+  font-size: 32px;
+  color: $text-color;
+}
 /* NavBar  */
+
 .navbar {
   width: 100%;
   display: flex;
@@ -108,11 +138,10 @@ button {
   font-size: 16px;
   font-weight: 600;
 }
-
 .nav_container_links_link-active {
   font-size: 18px;
   font-weight: 600;
-  border-bottom: 2.5px solid #3e2c1c;
+  border-bottom: 2.5px solid $text-color;
 }
 
 @media (width <= 768px) {
@@ -122,16 +151,20 @@ button {
   .navbar_container {
     justify-content: center;
   }
+
   .navbar_icon {
     width: 180px;
   }
 }
+
 @media (width <= 470px) {
   .navbar_icon {
     width: 64px;
   }
 }
+
 /* Seccion Principal */
+
 .hero-section {
   width: 100%;
   height: 600px;
@@ -154,13 +187,13 @@ button {
   font-size: 48px;
   max-width: 100%;
   width: 24ch;
-  font-family: "Playfair Display", serif;
-  color: #3e2c1c;
+  font-family: $font-title;
+  color: $text-color;
 }
 
 .hero_section_header_pg {
   margin-top: 16px;
-  color: #3e2c1c;
+  color: $text-color;
   font-size: 18px;
   font-weight: 600;
   max-width: 100%;
@@ -171,8 +204,8 @@ button {
   display: inline-block;
   width: max-content;
   margin-top: 26px;
-  color: #fdf9f3;
-  background: #6b8e77;
+  color: $bg-color;
+  background: $btn-primary;
   padding: 6.5px 28px;
   font-weight: 600;
 }
@@ -191,23 +224,29 @@ button {
     display: flex;
     justify-content: center;
   }
+
   .hero_section_header_title {
     font-size: 32px;
   }
+
   .hero_section_header_pg {
     font-size: 16px;
   }
+
   .hero_section_footer_svg {
     width: 180px;
     position: absolute;
     right: 0;
     z-index: -10;
   }
+
   .hero_section_header_btn {
     margin-top: 42px;
   }
 }
+
 /* Seccion Categorias */
+
 .category_section_footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -216,18 +255,17 @@ button {
 }
 
 .category_section_footer_card {
-  background-color: #6b8e77;
+  background-color: $btn-primary;
   padding: 14px 18px;
   border-radius: 10px;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fdf9f3;
+  color: $bg-color;
 }
-
 .category_section_footer_card h2 {
-  font-family: "Playfair Display", serif;
+  font-family: $font-title;
 }
 
 .category_section_footer_card_pg {
@@ -253,7 +291,9 @@ button {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }
+
 /* Seccion Libros Destacados */
+
 .books_section_footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -274,7 +314,7 @@ button {
 
 .books_section_footer_title {
   font-size: 18px;
-  font-family: "Playfair Display", serif;
+  font-family: $font-title;
   font-weight: 800;
   margin-top: 12px;
 }
@@ -286,19 +326,23 @@ button {
 }
 
 /* Seccion Testimonios */
+
 .views_section_footer {
   width: 100%;
   display: grid;
   gap: 14px;
-  grid-template-areas: "top top" "left right" "bottom bottom";
+  grid-template-areas:
+    "top top"
+    "left right"
+    "bottom bottom";
   margin-top: 44px;
 }
 
 .views_section_footer_card {
-  background-color: #6b8e77;
+  background-color: $btn-primary;
   border-radius: 10px;
   padding: 24px;
-  color: #fdf9f3;
+  color: $bg-color;
   display: flex;
   flex-direction: column;
   height: 160px;
@@ -337,11 +381,18 @@ button {
     height: max-content;
     gap: 12px;
   }
+
   .views_section_footer {
-    grid-template-areas: "top top" "left left" "right right" "bottom bottom";
+    grid-template-areas:
+      "top top"
+      "left left"
+      "right right"
+      "bottom bottom";
   }
 }
+
 /* Section Newsletter */
+
 .newsletter_section_footer {
   background-image: url("./assets/img/Newsletter.webp");
   background-position: center;
@@ -358,7 +409,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fdf9f3;
+  color: $bg-color;
 }
 
 .newsletter_section_footer_title {
@@ -386,9 +437,9 @@ button {
 .newsletter_section_footer_btn {
   padding: 10px 8px;
   max-width: 100%;
-  background-color: #6b8e77;
+  background-color: $btn-primary;
   font-weight: 700;
-  color: #fdf9f3;
+  color: $bg-color;
   border-radius: 0px 12px 12px 0px;
   font-size: 16px;
   cursor: pointer;
@@ -403,14 +454,18 @@ button {
     margin-top: 4px;
     text-align: center;
   }
+
   .newsletter_section_footer_btn {
     padding: 8px;
   }
+
   .newsletter_section_footer_contain {
     gap: 8px;
   }
 }
+
 /* Footer */
+
 .footer {
   width: 100%;
   display: flex;
@@ -433,7 +488,6 @@ button {
   display: flex;
   justify-content: start;
 }
-
 .container_links {
   display: flex;
   gap: 18px;
@@ -452,7 +506,7 @@ button {
   display: flex;
   justify-content: center;
   padding: 4px 12px;
-  background-color: #6b8e77;
+  background-color: $btn-primary;
   border-radius: 50%;
   height: 28px;
   width: 28px;
@@ -477,6 +531,7 @@ button {
     padding: 12px 8px;
     flex-wrap: wrap;
   }
+
   .footer_container_navbar_icon {
     display: flex;
     width: 100%;
@@ -484,5 +539,3 @@ button {
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
