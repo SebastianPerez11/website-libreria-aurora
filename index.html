@@ -10,18 +10,35 @@
     <header id="inicio" class="navbar">
       <nav class="navbar_container">
         <picture>
-          <img src="./assets/svg/logoAurora.svg" class="navbar_icon" alt="" />
+          <img
+            src="./assets/svg/logoAurora.svg"
+            width="115"
+            height="145"
+            class="navbar_icon"
+            alt="Logo de Librería Aurora"
+          />
         </picture>
         <ul class="nav_container_links">
           <li>
             <a class="nav_container_links_link-active" href="./">Inicio</a>
           </li>
-          <li><a class="nav_container_links_link" href="#catalogo">Catálogo</a></li>
-          <li><a class="nav_container_links_link" href="#testimonios">Testimonios</a></li>
           <li>
-            <a class="nav_container_links_link" href="./">Sobre Nosotros </a>
+            <a class="nav_container_links_link" href="#categorias"
+              >Categorías</a
+            >
           </li>
-          <li><a class="nav_container_links_link" href="#contacto">Contacto</a></li>
+
+          <li>
+            <a class="nav_container_links_link" href="#catalogo">Catálogo</a>
+          </li>
+          <li>
+            <a class="nav_container_links_link" href="#testimonios"
+              >Testimonios</a
+            >
+          </li>
+          <li>
+            <a class="nav_container_links_link" href="#contacto">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -30,7 +47,7 @@
       <section class="section hero-section">
         <header class="hero_section_header">
           <h1 class="hero_section_header_title">
-            Tu próximo libro favorito está a un clic de distancia:
+            Tu próximo libro favorito está a un clic de distancia.
           </h1>
           <p class="hero_section_header_pg">
             "Explora nuestra colección única de títulos cuidadosamente
@@ -42,12 +59,12 @@
           <img
             class="hero_section_footer_svg"
             src="./assets/svg/library3d.svg"
-            alt=""
+            alt="Libros de Colores "
           />
         </header>
       </section>
 
-      <section class="section">
+      <section class="section" id="categorias">
         <header>
           <h1 class="section_title">Categorías destacadas</h1>
         </header>
@@ -107,6 +124,7 @@
               class="books_section_footer_img"
               src="./assets/img/LaSombraDelVientoBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">“La sombra del viento”</h2>
             <p class="books_section_footer_subtitle">Carlos Ruiz Zafón</p>
@@ -116,6 +134,7 @@
               class="books_section_footer_img"
               src="./assets/img/SapiensBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">
               "Sapiens: De animales a dioses"
@@ -139,6 +158,7 @@
               class="books_section_footer_img"
               src="./assets/img/NarniaBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">“Las crónicas de Narnia”</h2>
             <p class="books_section_footer_subtitle">Clive Staples Lewis</p>
@@ -149,6 +169,7 @@
               class="books_section_footer_img"
               src="./assets/img/AlmendraBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">“Almendra”</h2>
 
@@ -160,6 +181,7 @@
               class="books_section_footer_img"
               src="./assets/img/PaperTownsBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">“Paper Towns”</h2>
             <p class="books_section_footer_subtitle">John Green</p>
@@ -168,13 +190,14 @@
           <div class="books_section_footer_card">
             <img
               class="books_section_footer_img"
-              src="./assets/img/HarryPotterBook.webp"
+              src="./assets/img/CazadoresDeSombraBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">
-              "Harry Potter y la piedra filosofal"
+              "Cazadores de sombras: Ciudad del fuego celestial"
             </h2>
-            <p class="books_section_footer_subtitle">Yuval Noah Harari</p>
+            <p class="books_section_footer_subtitle">Cassandra Clare</p>
           </div>
 
           <div class="books_section_footer_card">
@@ -182,11 +205,10 @@
               class="books_section_footer_img"
               src="./assets/img/BuscandoAlaskaBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">“Buscando a Alaska”</h2>
-            <p class="books_section_footer_subtitle">
-              John Green
-            </p>
+            <p class="books_section_footer_subtitle">John Green</p>
           </div>
 
           <div class="books_section_footer_card">
@@ -194,6 +216,7 @@
               class="books_section_footer_img"
               src="./assets/img/BajoLaMismaEstrellaBook.webp"
               alt="Imagen de un Libro"
+              loading="lazy"
             />
             <h2 class="books_section_footer_title">“Bajo la Misma Estrella”</h2>
             <p class="books_section_footer_subtitle">John Green</p>
@@ -205,10 +228,11 @@
               src="./assets/img/HarryPotterBook.webp"
               alt="Imagen de un Libro"
             />
-            <h2 class="books_section_footer_title">“Harry Potter y la piedra filosofal”</h2>
+            <h2 class="books_section_footer_title">
+              “Harry Potter y la piedra filosofal”
+            </h2>
 
-            <p class="books_section_footer_subtitle"> J. K. Rowling
-</p>
+            <p class="books_section_footer_subtitle">J. K. Rowling</p>
           </div>
         </footer>
       </section>
@@ -230,7 +254,12 @@
             </p>
             <div class="views_section_footer_card_contain">
               <h2>María L.</h2>
-              <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
+              <img
+                src="./assets/svg/iconQuot.svg"
+                width="40"
+                height="40"
+                alt="Icono de una Comilla"
+              />
             </div>
           </div>
 
@@ -242,7 +271,12 @@
             </p>
             <div class="views_section_footer_card_contain">
               <h2>Esteban C.</h2>
-              <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
+              <img
+                src="./assets/svg/iconQuot.svg"
+                width="40"
+                height="40"
+                alt="Icono de una Comilla"
+              />
             </div>
           </div>
 
@@ -254,7 +288,12 @@
             </p>
             <div class="views_section_footer_card_contain">
               <h2>Ricardo V.</h2>
-              <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
+              <img
+                src="./assets/svg/iconQuot.svg"
+                width="40"
+                height="40"
+                alt="Icono de una Comilla"
+              />
             </div>
           </div>
 
@@ -269,7 +308,12 @@
             </p>
             <div class="views_section_footer_card_contain">
               <h2>Lucía T.</h2>
-              <img src="./assets/svg/iconQuot.svg" alt="Icono de una Comilla" />
+              <img
+                src="./assets/svg/iconQuot.svg"
+                width="40"
+                height="40"
+                alt="Icono de una Comilla"
+              />
             </div>
           </div>
         </footer>
@@ -288,11 +332,17 @@
               exclusivos.
             </p>
             <form class="newsletter_section_footer_contain_input" action="">
-              <input
-                required
-                class="newsletter_section_footer_input"
-                type="email"
-              />
+              <label for="email" class="newsletter_section_footer_label">
+                <input
+                  required
+                  class="newsletter_section_footer_input"
+                  type="email"
+                  id="email" 
+                  placeholder="Ingresa tu correo electrónico"
+                  aria-label="Ingresa tu correo electrónico"
+                />
+              </label>
+
               <button class="newsletter_section_footer_btn">Suscribirse</button>
             </form>
           </div>
@@ -302,23 +352,47 @@
     <footer class="footer" id="contacto">
       <div class="footer_container">
         <picture class="footer_container_navbar_icon">
-          <img class="navbar_icon" src="./assets/svg/logoAurora.svg" alt="" />
+          <img
+            class="navbar_icon"
+            src="./assets/svg/logoAurora.svg"
+            alt="Logo de Librería Aurora"
+            width="115"
+            height="145"
+          />
         </picture>
 
         <aside class="footer_container_aside">
           <div class="container_links">
             <a class="footer_aside_link" href="./"
-              ><img src="./assets/svg/iconFacebook.svg" alt=""
+              ><img
+                src="./assets/svg/iconFacebook.svg"
+                width="20"
+                height="20"
+                alt="Icono de Facebook"
             /></a>
             <a class="footer_aside_link" href="./"
-              ><img src="./assets/svg/iconInstagram.svg" alt=""
+              ><img
+                src="./assets/svg/iconInstagram.svg"
+                width="20"
+                height="20"
+                alt="Icono de Instagram"
             /></a>
             <a class="footer_aside_link" href="./"
-              ><img src="./assets/svg/iconWhatsapp.svg" alt=""
+              ><img
+                src="./assets/svg/iconWhatsapp.svg"
+                width="20"
+                height="20"
+                alt="Icono de WhatsApp"
             /></a>
             <a href="#inicio" class="footer_aside_links">
               <span> Volver al inicio</span>
-              <img class="arrow_icon" src="./assets/svg/IconArrow.svg" alt="" />
+              <img
+                class="arrow_icon"
+                src="./assets/svg/IconArrow.svg"
+                width="24"
+                height="24"
+                alt="Flecha mirando hacia arriba"
+              />
             </a>
           </div>
           <p class="footer_aside_pg">Desarrollado por Sebastian Perez - 2025</p>
