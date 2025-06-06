@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Librería Aurora - Tu espacio para descubrir, sentir y leer</title>
+
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Librería Aurora" />
+    <meta
+      name="description"
+      content="Librería Aurora es tu tienda online de libros. Encontrá novelas, cuentos, ensayos y más con envíos a todo el país."
+    />
+    <meta
+      name="keywords"
+      content="librería online, libros, comprar libros, Librería Aurora, novelas, cuentos, literatura, tienda de libros"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="author" content="Sebastian Perez" />
+    <meta name="copyright" content="Librería Aurora" />
+    <meta name="application-name" content="Librería Aurora" />
+
+    <link rel="icon" href="./assets/svg/logoAurora.svg" type="image/svg+xml" />
   </head>
   <body>
     <header id="inicio" class="navbar">
@@ -40,6 +60,7 @@
             <a class="nav_container_links_link" href="#contacto">Contacto</a>
           </li>
         </ul>
+        <img src="./assets/svg/IconMenu.svg" class="nav_menu_hamburger" />
       </nav>
     </header>
 
@@ -128,6 +149,7 @@
             />
             <h2 class="books_section_footer_title">“La sombra del viento”</h2>
             <p class="books_section_footer_subtitle">Carlos Ruiz Zafón</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
           <div class="books_section_footer_card">
             <img
@@ -140,6 +162,7 @@
               "Sapiens: De animales a dioses"
             </h2>
             <p class="books_section_footer_subtitle">Yuval Noah Harari</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
           <div class="books_section_footer_card">
             <img
@@ -151,6 +174,7 @@
             <p class="books_section_footer_subtitle">
               Antoine de Saint-Exupéry
             </p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -162,6 +186,7 @@
             />
             <h2 class="books_section_footer_title">“Las crónicas de Narnia”</h2>
             <p class="books_section_footer_subtitle">Clive Staples Lewis</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -174,6 +199,7 @@
             <h2 class="books_section_footer_title">“Almendra”</h2>
 
             <p class="books_section_footer_subtitle">Won-Pyung Sohn</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -185,6 +211,7 @@
             />
             <h2 class="books_section_footer_title">“Paper Towns”</h2>
             <p class="books_section_footer_subtitle">John Green</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -194,10 +221,9 @@
               alt="Imagen de un Libro"
               loading="lazy"
             />
-            <h2 class="books_section_footer_title">
-              "Cazadores de sombras: Ciudad del fuego celestial"
-            </h2>
+            <h2 class="books_section_footer_title">"Cazadores de sombras"</h2>
             <p class="books_section_footer_subtitle">Cassandra Clare</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -209,6 +235,7 @@
             />
             <h2 class="books_section_footer_title">“Buscando a Alaska”</h2>
             <p class="books_section_footer_subtitle">John Green</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -220,6 +247,7 @@
             />
             <h2 class="books_section_footer_title">“Bajo la Misma Estrella”</h2>
             <p class="books_section_footer_subtitle">John Green</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
 
           <div class="books_section_footer_card">
@@ -228,11 +256,10 @@
               src="./assets/img/HarryPotterBook.webp"
               alt="Imagen de un Libro"
             />
-            <h2 class="books_section_footer_title">
-              “Harry Potter y la piedra filosofal”
-            </h2>
+            <h2 class="books_section_footer_title">“Harry Potter”</h2>
 
             <p class="books_section_footer_subtitle">J. K. Rowling</p>
+            <a class="books_section_btn" href="./">Ver Libro</a>
           </div>
         </footer>
       </section>
@@ -337,7 +364,7 @@
                   required
                   class="newsletter_section_footer_input"
                   type="email"
-                  id="email" 
+                  id="email"
                   placeholder="Ingresa tu correo electrónico"
                   aria-label="Ingresa tu correo electrónico"
                 />

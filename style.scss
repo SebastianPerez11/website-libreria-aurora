@@ -5,6 +5,7 @@
 $bg-color: #ffffff;
 $text-color: #3e2c1c;
 $btn-primary: #6b8e77;
+$btn-secondary: #4b6e58;
 $font-title: "Playfair Display", serif;
 $font-paragraph: "Open Sans", sans-serif;
 
@@ -93,19 +94,26 @@ button {
   padding: 44px 24px;
 }
 
-@media (width <= 470px) {
-  .section {
-    width: 100%;
-    max-width: 1440px;
-    padding: 12px 8px;
-  }
-}
-
 .section_title {
   font-family: $font-title;
   font-size: 32px;
   color: $text-color;
 }
+
+@media (width <= 470px) {
+  .section {
+    width: 100%;
+    max-width: 1440px;
+    padding: 24px 8px;
+  }
+
+  .section_title {
+    font-family: $font-title;
+    font-size: 24px;
+    color: $text-color;
+  }
+}
+
 /* NavBar  */
 
 .navbar {
@@ -114,6 +122,7 @@ button {
   justify-content: center;
   align-items: center;
   animation: nav-animation 0.8s ease-out;
+  margin-bottom: 64px;
 }
 
 .navbar_container {
@@ -134,12 +143,21 @@ button {
   gap: 18px;
 }
 
+.nav_menu_hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
 .nav_container_links_link {
   font-size: 16px;
   font-weight: 600;
+  transition: font-size 0.3s ease;
 }
 .nav_container_links_link:hover {
   border-bottom: 2.5px solid $text-color;
+  font-size: 18px;
 }
 
 .nav_container_links_link-active {
@@ -149,15 +167,28 @@ button {
 }
 
 @media (width <= 768px) {
+  .navbar {
+    margin-bottom: 0px;
+  }
+  .navbar_container {
+    height: max-content;
+    padding: 12px 8px;
+  }
   .nav_container_links {
     display: none;
   }
   .navbar_container {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .navbar_icon {
     width: 180px;
+    height: max-content;
+  }
+
+  .nav_menu_hamburger {
+    display: flex;
+    cursor: pointer;
   }
 }
 
@@ -171,16 +202,17 @@ button {
 
 .hero-section {
   width: 100%;
-  height: 600px;
+  height: max-content;
   display: flex;
   justify-content: center;
+  margin-bottom: 64px;
 }
 
 .hero_section_header {
   position: relative;
   width: 1040px;
   max-width: 100%;
-  height: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,6 +244,13 @@ button {
   background: $btn-primary;
   padding: 6.5px 28px;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero_section_header_btn:hover {
+  background-color: $btn-secondary;
+  color: $bg-color;
+  transform: translateY(-2px);
 }
 
 .hero_section_footer_svg {
@@ -227,6 +266,7 @@ button {
     height: 340px;
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
   }
 
   .hero_section_header_title {
@@ -246,6 +286,9 @@ button {
 
   .hero_section_header_btn {
     margin-top: 42px;
+  }
+  .hero_section_header {
+    gap: 2px;
   }
 }
 
@@ -301,13 +344,14 @@ button {
 .books_section_footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 24px;
   margin-top: 44px;
 }
 
 .books_section_footer_card {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .books_section_footer_img {
@@ -327,8 +371,27 @@ button {
   font-size: 14px;
   font-weight: 500;
   margin-top: 4px;
+  flex-grow: 1;
 }
 
+.books_section_btn {
+  display: inline-block;
+  width: max-content;
+  margin-top: 14px;
+  color: $btn-secondary;
+  border: 2px solid $btn-primary;
+  padding: 4.5px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.books_section_btn:hover {
+  color: $bg-color;
+  border: 2px solid $btn-primary;
+  background-color: $btn-primary;
+  transform: translateY(-2px);
+}
 /* Seccion Testimonios */
 
 .views_section_footer {
@@ -349,7 +412,7 @@ button {
   color: $bg-color;
   display: flex;
   flex-direction: column;
-  height: 160px;
+  height: 180px;
 }
 
 .views_section_footer_card_title {
@@ -461,9 +524,6 @@ button {
 }
 
 @media (width <= 562px) {
-  .newsletter_section_footer_contain {
-    height: 320px;
-  }
   .newsletter_section_footer_subtitle {
     font-size: 16px;
     margin-top: 4px;
